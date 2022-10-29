@@ -1,1 +1,79 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+:root {
+  // primary
+
+  --color-soft-orange: hsl(35, 77%, 62%);
+  --color-soft-red: hsl(5, 85%, 63%);
+
+  // Neutral
+
+  --color-off-white: hsl(36, 100%, 99%);
+  --color-grayish-blue: hsl(233, 8%, 79%);
+  --color-dark-grayish-blue: hsl(236, 13%, 42%);
+  --color-very-dark-blue: hsl(240, 100%, 5%);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  line-height: 1.7;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--color-very-dark-blue);
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a.btn {
+  display: inline-block;
+  margin-top: 2em;
+  background-color: var(--color-soft-red);
+  color: var(--color-off-white);
+  padding: 0.5em 1.5em;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: var(--color-very-dark-blue);
+  }
+}
+
+picture,
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.container {
+  width: min(100% - 2em, 1100px);
+  margin-inline: auto;
+}

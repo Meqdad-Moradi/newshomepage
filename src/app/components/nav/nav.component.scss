@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 1em;
+
+  .logo-link {
+    font-weight: 700;
+    font-size: 2rem;
+  }
+
+  .nav-list {
+    @extend .header;
+    gap: 3em;
+    padding: 0;
+
+    a {
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: var(--color-soft-red);
+      }
+    }
+  }
+
+  .nav-toggler-btn {
+    display: none;
+  }
+}

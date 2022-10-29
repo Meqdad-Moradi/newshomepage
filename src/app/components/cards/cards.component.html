@@ -1,0 +1,12 @@
+<section class="cards">
+  <div class="card" *ngFor="let item of cards">
+    <div class="img-box">
+      <img [src]="item.url" [alt]="item.title" />
+    </div>
+    <div class="card-details">
+      <h2>{{ item.id }}</h2>
+      <h1>{{ item.title }}</h1>
+      <p>{{ item.desc }}</p>
+    </div>
+  </div>
+</section>
