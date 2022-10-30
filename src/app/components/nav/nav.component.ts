@@ -8,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class NavComponent implements OnInit {
   iconMenu: string = './../../../assets/images/icon-menu.svg';
   iconClose: string = './../../../assets/images/icon-menu-close.svg';
-  navOpen: boolean = false;
-  
+  isNavOpen: boolean = false;
+
   constructor() {}
 
   ngOnInit(): void {}
+
+  toggleNav(): void {
+    this.isNavOpen = !this.isNavOpen;
+  }
 }

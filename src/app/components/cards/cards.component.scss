@@ -8,11 +8,12 @@
   .card {
     display: flex;
     gap: 1em;
+    align-items: flex-start;
   }
 
   .img-box {
     img {
-      aspect-ratio: 1.5 / 1;
+      aspect-ratio: 1 / 1.5;
       height: 100%;
       object-fit: cover;
     }
@@ -41,5 +42,11 @@
       margin-top: 0.5em;
       font-size: 0.9rem;
     }
+  }
+}
+
+@media (max-width: 50em) {
+  .cards {
+    grid-template-columns: 1fr;
   }
 }
